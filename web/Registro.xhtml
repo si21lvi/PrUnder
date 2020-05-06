@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./Lobby.xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <ui:define name="top">
+        top
+    </ui:define>
+
+    <ui:define name="content">
+        <h:form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>REGISTRO</legend>
+
+<!-- Button Drop Down -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="buttondropdown">Tipo:</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <input id="buttondropdown" name="buttondropdown" class="form-control" placeholder="" type="text">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Opciones
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Empresarial</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nombre">Nombre:</label>  
+  <div class="col-md-4">
+  <h:inputText value="" styleClass="form-control input-md" required="true"/> 
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contraseña">Contraseña:</label>
+  <div class="col-md-4">
+    <h:inputSecret value="" styleClass="form-control input-md" required="true"/>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="correo">Correo:</label>  
+  <div class="col-md-4">
+  <h:inputText value="" styleClass="form-control input-md" required="true"/> 
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dirección">Dirección:</label>  
+  <div class="col-md-4">
+  <h:inputText value="" styleClass="form-control input-md" required="true"/> 
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="empresa">Nombre de la empresa:</label>  
+  <div class="col-md-4">
+  <h:inputText value="" styleClass="form-control input-md" required="true"/> 
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nit">Nit:</label>  
+  <div class="col-md-4">
+  <h:inputText value="" styleClass="form-control input-md" required="true"/>   
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="registrarse"></label>
+  <div class="col-md-4">
+    <h:button styleClass="btn btn-primary" value="Registrarse"/>
+  </div>
+</div>
+
+</fieldset>
+</h:form>
+    </ui:define>
+
+</ui:composition>
